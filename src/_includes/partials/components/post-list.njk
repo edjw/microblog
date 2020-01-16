@@ -1,15 +1,21 @@
 {% if postListItems.length %}
-  <section>
+  <section class="post_list">
     <h2>{{ postListHeading }}</h2>
     <ol reversed>
       {% for item in postListItems %}
-        <li>
+        <li class="post_list_item">
           <h3>
-            <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
+            <a href="{{ item.url }}" rel="bookmark">
+              <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+            </a>
           </h3>
-          <p>
-            <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-          </p>
+          <div class="post_content">
+            {{ item.data.content | safe }}
+          </div>
+
+          {% if item.data.image %}
+            <img src="{{ image }}" alt="{{ image_alt_text }}" class="post_image">
+          {% endif %}
         </li>
       {% endfor %}
     </ol>

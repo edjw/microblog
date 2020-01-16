@@ -1,0 +1,177 @@
+<style>
+    /* Andy Bell's Modern CSS Reset */
+    /* Box sizing rules */
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+
+    /* Remove default padding */
+    ol[class],
+    ul[class] {
+        padding: 0;
+    }
+
+    /* Remove default margin */
+    blockquote,
+    body,
+    dd,
+    dl,
+    figcaption,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    li,
+    ol[class],
+    p,
+    ul[class] {
+        margin: 0;
+    }
+
+    /* Set core body defaults */
+    body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+    }
+
+    /* Remove list styles on ul, ol elements with a class attribute */
+    ol[class],
+    ul[class] {
+        list-style: none;
+    }
+
+    /* A elements that don't have a class get default styles */
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+
+    /* Make images easier to work with */
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Natural flow and rhythm in articles by default */
+    article>*+* {
+        margin-top: 1em;
+    }
+
+    /* Inherit fonts for inputs and buttons */
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+    }
+
+    /* Remove all animations and transitions for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+
+    .wrapper {
+        max-width: 58rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .visually-hidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: auto;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+    }
+
+    .heading-permalink {
+        margin-left: 0.25rem;
+    }
+
+    html {
+        font-size: 16px;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        min-width: 300px;
+        text-rendering: optimizeSpeed;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+
+    body {
+        font-family: -apple-systrem, BlinkMacSystremFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        font-size: 1.125rem;
+    }
+
+    a {
+        border-bottom: 2px solid #2341C1;
+        color: #212121;
+        text-decoration: none !important;
+    }
+
+    a:active,
+    a:focus,
+    a:hover {
+        color: #2341C1;
+        text-decoration: none;
+    }
+
+    a.nav-link {
+        background-color: #2341C1;
+    }
+
+    a.nav-link:active,
+    a.nav-link:focus,
+    a.nav-link:hover {
+        color: #f8f9fa !important;
+    }
+
+    .intro_summary {
+        margin-top: 1.5rem;
+    }
+
+    .post_list {
+        margin-top: 1rem;
+    }
+
+    .post_list_item {
+        list-style-type: none;
+        margin-top: 1.5rem;
+    }
+
+    .post_date {
+        margin-top: 1.5rem;
+    }
+
+    .post_content {
+        margin-top: 1rem;
+    }
+
+    .post_image {
+        margin-top: 1rem;
+    }
+
+    .back_to_all_posts {
+        margin-top: 1rem;
+    }
+
+</style>

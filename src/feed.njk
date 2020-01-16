@@ -16,10 +16,12 @@ permalink: '/feed.xml'
 	{% for post in collections.posts %}
   {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    <title>{{ post.date | dateFilter }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
+    <image>{{ post.data.image }}</image>
+    <imagealttext>{{ post.data.image_alt_text }}</imagealttext>
     <content type="html"><![CDATA[
       {{ post.templateContent | safe }}
     ]]></content>

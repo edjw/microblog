@@ -4,14 +4,12 @@
     <nav>
       {% if paginationPrevUrl %}
         <a href="{{ paginationPrevUrl }}" data-direction="backwards">
-          <span role="text">{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
-          {% include "icons/arrow.svg" %}
+          <span role="text">Previous <</span>
         </a>
       {% endif %}
       {% if paginationNextUrl %}
         <a href="{{ paginationNextUrl }}" data-direction="forwards">
-          <span role="text">{{ paginationNextText if paginationNextText else 'Next' }}</span>
-          {% include "icons/arrow.svg" %}
+          <span role="text">Older posts ></span>
         </a>
       {% endif %}
     </nav>

@@ -1,11 +1,11 @@
 ---
 layout: 'layouts/home.njk'
-title: A skeletal kit for Eleventy
+title: Ed's microblog
 postsHeading: Latest posts
 archiveButtonText: See all posts
 socialImage: ''
 ---
 
-Hebra is a skeletal [Eleventy](https://11ty.io) starter kit that gives you nothing but good ol’ HTML and an RSS feed. It serves as the ideal kick-off point for your projects.
+This is Ed's microblog — re-posting to [Twitter](https://twitter.com/_edjw)
 
-Check it out [on GitHub](https://github.com/andybelldesign/hebra).
+My main personal website is at [edjohnsonwilliams.co.uk](https://edjohnsonwilliams.co.uk)

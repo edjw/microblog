@@ -1,7 +1,7 @@
 {
-  "name": "hebra",
+  "name": "eds_microblog",
   "version": "0.1.0",
-  "description": "A skeletal, HTML only starter kit for Eleventy",
+  "description": "A microblog re-posting to Twitter. Started with Andys Bell's Hebra 11ty starter",
   "main": "index.js",
   "scripts": {
     "start": "npm run serve",
