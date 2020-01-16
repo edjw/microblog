@@ -4,9 +4,9 @@
   "description": "A microblog re-posting to Twitter. Started with Andys Bell's Hebra 11ty starter",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve",
-    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
-    "production": "npx eleventy"
+    "start": "yarn run serve",
+    "serve": "cross-env ELEVENTY_ENV=development yarn exec eleventy --serve",
+    "production": "yarn exec eleventy"
   },
   "keywords": [],
   "author": "",
