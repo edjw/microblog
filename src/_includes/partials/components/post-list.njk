@@ -14,7 +14,7 @@
           </div>
 
           {% if item.data.image %}
-            <img src="{{ image }}" alt="{{ image_alt_text }}" class="post_image">
+            <img src="{{ item.data.image }}" alt="{{ item.data.image_alt_text }}" class="post_image">
           {% endif %}
         </li>
       {% endfor %}
